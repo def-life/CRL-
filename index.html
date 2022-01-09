@@ -1,0 +1,185 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container extra">
+        <div class="hamburger">
+          <span></span>
+        </div>
+        <div class="logo center">
+          <img src="./images/logo.svg" alt="" />
+        </div>
+        <nav>
+          <ul class="nav_list">
+            <li><a class="link" href="#">Home</a></li>
+            <li><a class="link" href="#">About</a></li>
+            <li><a class="link" href="#">Contact</a></li>
+          </ul>
+          <ul class="nav_list">
+            <li><a class="link" href="#">Sign in</a></li>
+            <li><a class="link" href="#">Sign out</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="s-1">
+        <div class="container">
+          <div class="intro">
+            <h2 class="intro_heading">
+              Responsive layout
+              <span class="heading_remains">don't have to be a struggle</span>
+            </h2>
+            <div class="intro_content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
+                consectetur ab laboriosam. Non magni suscipit voluptas tempora.
+                Porro cupiditate pariatur sit quia consequatur?
+              </p>
+            </div>
+            <div class="intro_btn">
+              <button>I want to learn</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="s-2">
+        <div class="container row">
+          <div class="col box">
+            <h2>Mobile First</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Molestiae voluptatibus soluta, dolores voluptate cumque placeat
+              atque explicabo quam, laboriosam repellat expedita magni at.
+            </p>
+          </div>
+          <div class="col box">
+            <h2>Efficient</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Molestiae voluptatibus soluta, dolores voluptate cumque placeat
+              atque explicabo quam, laboriosam repellat expedita magni at.
+            </p>
+          </div>
+          <div class="col box">
+            <h2>Done Right</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Molestiae voluptatibus soluta, dolores voluptate cumque placeat
+              atque explicabo quam, laboriosam repellat expedita magni at.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="s-3">
+        <div class="row container">
+          <div class="c-1">
+            <h2>It doesn't have to be so hard</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias
+              tenetur neque recusandae autem tempora praesentium nemo, maiores
+              officia illo quas animi. Error, ipsa?
+            </p>
+            <div class="s-3_image">
+              <img
+                src="https://picsum.photos/seed/picsum/400/400"
+                alt="random image"
+              />
+            </div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              inventore recusandae quibusdam quisquam sunt repellat
+              necessitatibus consequatur quasi. Excepturi earum debitis aperiam
+              soluta!
+            </p>
+          </div>
+          <div class="c-2">
+            <div class="col box">
+              <h2>Break It Down</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestiae voluptatibus soluta, dolores voluptate cumque placeat
+                atque explicabo quam, laboriosam repellat expedita magni at.
+              </p>
+            </div>
+            <div class="col box">
+              <h2>Work Your Way Out</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestiae voluptatibus soluta, dolores voluptate cumque placeat
+                atque explicabo quam, laboriosam repellat expedita magni at.
+              </p>
+            </div>
+            <div class="col box">
+              <h2>Coca Cola</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestiae voluptatibus soluta, dolores voluptate cumque placeat
+                atque explicabo quam, laboriosam repellat expedita magni at.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="top">
+        <div class="container">
+          <h2 class="footer_heading">just Scratching the Surface</h2>
+          <div class="row">
+            <div class="about box col">
+              <h2>About the company</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+                aspernatur suscipit fugit consectetur itaque, sequi sit deserunt
+                at corrupti, labore beatae molestias adipisci.
+              </p>
+            </div>
+            <div class="col other">
+              <h2>Getting around</h2>
+              <ul>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+              </ul>
+            </div>
+            <div class="col other">
+              <h2>Other Things</h2>
+              <ul>
+                <li>Cat</li>
+                <li>Dog</li>
+                <li>BUffalo</li>
+              </ul>
+            </div>
+            <div class="col other">
+              <h2>And more</h2>
+              <ul>
+                <li>Hode</li>
+                <li>Hdome</li>
+                <li>dome</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", init);
+
+      function init() {
+        let hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", () => {
+          document.querySelector("header").classList.toggle("active");
+        });
+      }
+    </script>
+  </body>
+</html>
